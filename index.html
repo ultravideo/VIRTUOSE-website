@@ -4,14 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>VIRTUOSE - Virtualized Video Services</title>
-    <meta name="description" content="VIRTUOSE Celtic-plus project website">
-    <meta name="keywords" content="VIRTUOSE">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="description" content="VIRTUOSE Celtic-plus project website" />
+    <meta name="keywords" content="VIRTUOSE" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <style>
       body {
         padding-top: 50px;
@@ -23,9 +23,9 @@
         display: block;
       }
     </style>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
@@ -33,8 +33,9 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-      <div id="tabs">
+      <div class="tab-content" id="tabs">
         <div class="masthead">
+        <!--
           <a href="#main_x"><img style="margin-bottom: 4px;" src="img/virtuose-logo.png" /></a>
           <ul style="float: right;" class="nav nav-justified">      
             <li><a href="#main_x">Main</a></li>
@@ -42,8 +43,76 @@
             <li><a href="#partners_x">Partners</a></li>
             <li><a href="#contact_x">Contact</a></li>
           </ul>
+          -->
+          <a href="#main_x"><img style="margin-bottom: 4px; height: 100px;" src="img/virtuose-logo.png" /></a>
+          <ul style="float: right;" class="nav nav-justified" id="myTabs" role="tablist">
+          <!--
+            <li role="presentation" class="active">
+              <a href="#main_x" id="main-tab" role="tab" data-toggle="tab" aria-controls="main" aria-expanded="true">Home</a>
+            </li>
+            -->
+            <li role="presentation" class="dropdown active">
+              <a aria-expanded="false" href="#" class="dropdown-toggle" id="homeTabDrop1" data-toggle="dropdown" aria-controls="homeTabDrop1-contents">Home<span class="caret"/>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeTabDrop1" id="homeTabDrop1-contents">
+                <li>
+                  <a href="#main_x" role="tab" id="main-tab" data-toggle="tab" aria-controls="main">Main page</a>
+                </li>
+                <li>
+                  <a href="#about_x" role="tab" id="about-tab" data-toggle="tab" aria-controls="partners">About the Project</a>
+                </li>
+                <li>
+                  <a href="#approach_x" role="tab" id="approach-tab" data-toggle="tab" aria-controls="approach">Approach</a>
+                </li>
+                <li>
+                  <a href="#results_x" role="tab" id="results-tab" data-toggle="tab" aria-controls="results">Expected Results</a>
+                </li>
+                <li>
+                  <a href="#impact_x" role="tab" id="impact-tab" data-toggle="tab" aria-controls="impact">Impact</a>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+              <a aria-expanded="false" href="#" class="dropdown-toggle" id="partnersTabDrop1" data-toggle="dropdown" aria-controls="partnersTabDrop1-contents">Partners <span class="caret"/>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="partnersTabDrop1" id="partnersTabDrop1-contents">
+                <li>
+                  <a href="#partners_x" role="tab" id="partners-tab" data-toggle="tab" aria-controls="partners">Project Partners</a>
+                </li>
+                <li>
+                  <a href="#celtic-plus_x" role="tab" id="celtic-plus-tab" data-toggle="tab" aria-controls="celtic-plus">Celtic-Plus</a>
+                </li>
+                <li>
+                  <a href="#funding-organizations_x" role="tab" id="funding-organizations-tab" data-toggle="tab" aria-controls="funding-organizations">Funding Organizations</a>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+              <a aria-expanded="false" href="#" class="dropdown-toggle" id="disseminationTabDrop1" data-toggle="dropdown" aria-controls="disseminationTabDrop1-contents">Dissemination <span class="caret"/>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="disseminationTabDrop1" id="disseminationTabDrop1-contents">
+                <li>
+                  <a href="#standardization_x" role="tab" id="standardization-tab" data-toggle="tab" aria-controls="standardization">Standardization</a>
+                </li>
+                <li>
+                  <a href="#publications_x" role="tab" id="publications-tab" data-toggle="tab" aria-controls="publications">Publications</a>
+                </li>
+                <li>
+                  <a href="#deliverables_x" role="tab" id="contact-tab" data-toggle="tab" aria-controls="deliverables">Main Deliverables</a>
+                </li>
+                <li>
+                  <a href="http://ultravideo.cs.tut.fi/#encoder">Kvazaar</a>
+                </li>
+              </ul>
+            </li>
+            <li role="presentation">
+              <a href="#contact_x" id="contact-tab" role="tab" data-toggle="tab" aria-controls="contact" aria-expanded="true">Contact us</a>
+            </li>
+          </ul>
         </div>
-        <div id="main_x">
+      
+        <!-- main-tab -->
+        <div id="main_x" role="tabpanel" aria-labelledby="main-tab" class="tab-pane active">
           <noscript>
           <div class="alert alert-danger"><h2>Your browser does not support JavaScript which is essential to access this page!</h2></div>
           </noscript> 
@@ -110,38 +179,179 @@
             </div>
           </div>
           
-        </div><!-- main-tab -->
+        </div>
+        <!-- main-tab -->
          
-         
+        <!-- about-tab -->
+        <div id="about_x" role="tabpanel" aria-labelledby="about-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>VIRTUOSE Project</h2>
+          <font class="TF">
+            The main focus in this project is to virtualize video services utilizing container and other virtualization techniques. Containers allow a lightweight virtualization of smaller or larger component with very little computing overhead, while traditional virtualization techniques allow virtualization of full server computer including the whole Operating System. There are plenty of different video services, which need to be started rapidly, scaled up or down, or moved to another computing platform. Virtualization is a key technology, which enables flexible usage of different computing platform. Computing platforms may be private or public cloud solutions, or in some cases those may be inside telco network, for example in the form of edge computing platforms.
+          </font>
+        </div>
+        <!-- about-tab -->
+        
+        <!-- approach-tab -->
+        <div id="approach_x" role="tabpanel" aria-labelledby="approach-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Project Approach</h2>
+          <font class="TF">
+            Virtualization techniques will be utilized in several video related use cases. Initially use cases are related to cloud gaming, video analytics and surveillance, video conferencing, cable TV and video streaming (live and video-on-demand) services.
+          </font>
+        </div>
+        <!-- approach-tab -->
+        
+        <!-- results-tab -->
+        <div id="results_x" role="tabpanel" aria-labelledby="results-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Expected Results</h2>
+          <font class="TF">
+            The goal of the project is define a flexible approach to implement video services, which:
+            <ol>
+              <li>Can be deployed easily to different computing platforms,</li>
+              <li>Are secure,</li>
+              <li>Can be monitored, and maintained easily,</li>
+              <li>Scale up to respond to the growth of users, and</li>
+              <li>Provide uninterrupted service.</li>
+            </ol>
+          </font>
+        </div>
+        <!-- results-tab -->
+        
+        <!-- impact-tab -->
+        <div id="impact_x" role="tabpanel" aria-labelledby="impact-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Project Impact</h2>
+          <font class="TF">
+            ..some information of the project impact..
+          </font>
+        </div>
+        <!-- impact-tab -->
+          
+        <!-- partners-tab -->
+        <div id="partners_x" role="tabpanel" aria-labelledby="partners-tab" class="tab-pane">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>Partners</h3>
+          <div class="row">
+            <div class="col-md-2" style="height: auto; width: 300px;">
+              <a href="http://www.tut.fi"><img class="logo-center" style="height: 50px; width: auto;" src="img/tty-logo.png" /></a>
+            </div>
+            <div class="col-xs-6" style="height: 80px;">
+              <span style="position: absolute; bottom: 50%;">Tampere University of Technology, Finland</b></a></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2" style="height: auto; width: 300px;">
+              <a href="https://www.teleste.com/"><img class="logo-center" style="height: 50px; width: auto;" src="img/teleste-logo.png" /></a>
+            </div>
+            <div class="col-xs-6" style="height: 80px;">
+              <span style="position: absolute; bottom: 50%;">Teleste, Finland</b></a></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2" style="height: auto; width: 300px;">
+              <a href="http://www.vtt.fi/?lang=en"><img class="logo-center" style="height: 50px; width: auto;" src="img/vtt-logo.png" /></a>
+            </div>
+            <div class="col-xs-6" style="height: 80px;">
+              <span style="position: absolute; bottom: 50%;"> VTT Technical Research Centre of Finland, Finland</b></a></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2" style="height: auto; width: 300px;">
+              <a href="http://www.example.com"><img class="logo-center" style="height: 80px; width: auto;" /></a>
+            </div>
+            <div class="col-xs-6" style="height: 80px;">
+              <span style="position: absolute; bottom: 50%;"> Other partner, Country</b></a></span>
+            </div>
+          </div>
+
+        </div>
+        <!-- partners-tab -->
+        
+        <!-- celtic-plus-tab -->
+        <div id="celtic-plus_x" role="tabpanel" aria-labelledby="celtic-plus-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Celtic-Plus</h2>
+          <font class="TF">
+            VIRTUOSE is an European research project funded by the Celtic-Plus initiative, which has the aim "..."
+          </font>
+        </div>
+        <!-- celtic-plus-tab -->
+        
+        <!-- funding-organizations-tab -->
+        <div id="funding-organizations_x" role="tabpanel" aria-labelledby="funding-organizations-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Funding Organizations</h2>
+          <font class="TF">
+            <div class="row">
+            <div class="col-md-2" style="height: auto; width: 300px;">
+              <a href="https://www.tekes.fi/en/"><img class="logo-center" style="height: 50px; width: auto;" src="img/tekes-logo.jpg" /></a>
+            </div>
+            <div class="col-xs-6" style="height: 80px;">
+              <span style="position: absolute; bottom: 50%;">Tekes, Finland</b></a></span>
+            </div>
+          </div>
+          </font>
+        </div>
+        <!-- celtic-plus-tab -->
+        
+        <!-- standardization-tab -->
+        <div id="standardization_x" role="tabpanel" aria-labelledby="standardization-tab" class="tab-pane">
+          <p>&nbsp;</p>    
+          
+          <h2>Standardization</h2>
+          <font class="TF">
+            <p style="line-height: 1;">... standardization document info 1..  </p>
+            <p style="line-height: 1;">... standardization document info 2..  </p>
+            <p style="line-height: 1;">... standardization document info 3..  </p>
+          </font>
+        </div>
         <!-- publications-tab -->
-        <div id="publications_x">
+        
+        <!-- publications-tab -->
+        <div id="publications_x" role="tabpanel" aria-labelledby="publications-tab" class="tab-pane">
           <p>&nbsp;</p>    
           
           <h2>Conference articles</h2>
           <font class="TF">
-            <p style="line-height: 1;">... in Proc. IEEE Int. Symp. Multimedia, USA, Dec. 2018.
-            </p>
+            <p style="line-height: 1;">... conference article info 1 ..  </p>
+            <p style="line-height: 1;">... conference article info 2..  </p>
+            <p style="line-height: 1;">... conference article info 3..  </p>
           </font>
         </div>
+        <!-- publications-tab -->
+        
+        <!-- deliverables-tab -->
+        <div id="deliverables_x" role="tabpanel" aria-labelledby="deliverables-tab" class="tab-pane">
+          <p>&nbsp;</p>    
           
-        <!-- partners-tab -->
-        <div id="partners_x"> 
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>VIRTUOSE project partners:</p>
+          <h2>Deliverables</h2>
+          <font class="TF">
+            <p style="line-height: 1;">... Document name here ..   </p>
+          </font>
         </div>
+        <!-- deliverables-tab -->
         
         <!-- contact-tab -->
-        <div id="contact_x"> 
+        <div id="contact_x" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane">
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>VIRTUOSE project contacts:</p>
         </div>
+        <!-- contact-tab -->
       </div><!-- tabs -->
       <hr>
        
       <footer>
-        <p><a href="http://www.example.com"><img style="width: 250px;" src="img/tty-logo.png" /></a></p>
+        <p><a href="http://www.example.com"><img style="width: 100px;" src="img/tty-logo.png" /></a></p>
       </footer>
        
     </div> <!-- /container --> 
@@ -152,31 +362,39 @@
     <script src="js/vendor/jquery-ui-1.12.1.min.js"></script>        
     <script src="js/vendor/bootstrap.min.js"></script>
     <script>
-    /* Fix the problem with opening an anchor which causes the browser to scroll to the anchor place, with this the scrolling is not happening */
+    /* Fixes the problem with opening an anchor which causes the browser to scroll to the anchor place, with this the scrolling is not happening */
       $(function() {
         function set_open_tab(hash)
-        {              
-          if (window.location.hash !== '') {
+        {          
+          if (window.location.hash !== '') {          
+            // Allow usage of real anchors
             if(window.location.hash.substr(0,7) == '#anchor') return;
+            
             window.location.hash = hash.replace("_x","");
-            var tabNum = $('a[href=' + location.hash.replace("#","\\#") + '_x]').parent().index();
-            $( "#tabs" ).tabs('option', 'active', tabNum);
+            
+            // Force tab change
+            $('a[id="'+window.location.hash.replace("#","") + '-tab'+'"]').tab('show');
+  
+            // Push Google Analytics hit on tab change
+            //_gaq.push(['_trackPageview',location.pathname + location.search + location.hash]);
           } else {
-            $( "#tabs" ).tabs('option', 'active', 0);
+            $('#main_x').tab('show');
           }
-          // Push Google Analytics hit on tab change
-          //_gaq.push(['_trackPageview',location.pathname + location.search + location.hash]);
         }
-      
-       $( "#tabs" ).tabs({
-          activate: function(event, ui) {                   
-            window.location.hash = ui.newPanel.attr('id').replace("_x","");
-          }
+        
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+          //e.target // newly activated tab
+          //e.relatedTarget // previous active tab
+          var target = $(e.target).attr("href");
+          window.location.hash = target;
         });
-        $(window).bind('hashchange', function() {              
+        
+        // Allow changing tab with an anchor link
+        $(window).bind('hashchange', function() {
           set_open_tab(window.location.hash);
         });
         
+        // Change to the correct tab on reload
         set_open_tab(window.location.hash);
       });
     </script>
